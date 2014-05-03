@@ -48,7 +48,7 @@
     var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
     var simpleLogin = new FirebaseSimpleLogin(chatRef, function(err, user) {
         if (user) {
-            chat.setUser(user.id, 'Anonymous' + user.id.substr(0, 8));
+            chat.setUser(user.id, 'ANONYMOUS');
             setTimeout(function(){
                 chat._chat.createRoom('Jazz', 'public', '-Jazz');
                 chat._chat.enterRoom('-Jazz');
