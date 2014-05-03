@@ -49,10 +49,10 @@
     var simpleLogin = new FirebaseSimpleLogin(chatRef, function(err, user) {
       if (user) {
         chat.setUser(user.id, 'Anonymous' + user.id.substr(0, 8));
-        setTimeout(function() {
-          chat._chat.createRoom('Pop', 'public', '-swag');
-          chat._chat.enterRoom('-swag');
-        }, 500);
+     setTimeout(function(){
+          chat._chat.createRoom('Rock', 'public', '-peniss');
+          chat._chat.enterRoom('-peniss');
+  }, 250);
       } else {
         simpleLogin.login('anonymous');    
       }
