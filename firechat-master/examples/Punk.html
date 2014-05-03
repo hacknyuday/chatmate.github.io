@@ -50,8 +50,8 @@
         if (user) {
             chat.setUser(user.id, 'Anonymous' + user.id.substr(0, 8));
             setTimeout(function(){
-                chat._chat.createRoom('Pop', 'public', '-pop');
-                chat._chat.enterRoom('-pop');
+                chat._chat.createRoom('Punk', 'public', '-punk');
+                chat._chat.enterRoom('-punk');
             }, 250);
         } else {
             simpleLogin.login('anonymous');
