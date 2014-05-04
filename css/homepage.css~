@@ -1,5 +1,5 @@
 #genres {
-    width: 40%;
+    width: 50%;
     height: 28%;
     background-color:hsla(360, 100%, 100%, 0.6);
     margin-left: auto;
@@ -12,7 +12,7 @@
 h1 {
 font-family: 'Montserrat', sans-serif;
 font-size:60px;
-    background-color:hsla(276, 92%, 29%, 0.1);
+    background-color:hsla(276, 92%, 29%, 0.25);
 }
 
 img.bg {
@@ -47,7 +47,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 35%;
-    height: 20%;
+    height: 40%;
     background-color: #57068c;
     color:white;
     font-size:18px;
@@ -58,8 +58,8 @@ body {
 }
 
 h1 {
-    text-align: center;
-color: white;
+	text-align: center;
+	color: white;
 }
 
 a {
