@@ -50,9 +50,11 @@
     var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
     var simpleLogin = new FirebaseSimpleLogin(chatRef, function(err, user) {
         if (user) {
-            chat.setUser(user.id, 'ANONYMOUS');
+            chat.setUser(user.id, 'pop' +'ANONYMOUS' + Math.floor((1+(Math.random()*10))));
             setTimeout(function(){
-                  chat._chat.createRoom('Pop', 'public');
+
+                  //chat._chat.createRoom('Pop', 'public');
+                  chat._chat.enterRoom("-JM6OOYSxX3MYB_jUZPx");
             }, 250);
         } else {
             simpleLogin.login('anonymous');

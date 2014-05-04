@@ -48,10 +48,10 @@
     var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
     var simpleLogin = new FirebaseSimpleLogin(chatRef, function(err, user) {
         if (user) {
-            chat.setUser(user.id, 'ANONYMOUS');
+            chat.setUser(user.id, 'jazz' + 'ANONYMOUS' + Math.floor((1+(Math.random()*10))));
             setTimeout(function(){
-               chat._chat.createRoom('Jazz', 'public');
-              //  chat._chat.enterRoom('-Jazz');
+               //chat._chat.createRoom('Jazz', 'public');
+            chat._chat.enterRoom('-JM-VQiKlOmi1Sn2qZNe');
                //chat._chat.inviteUser(user.id, "-Jazz");
                 //alert(user.id);
 

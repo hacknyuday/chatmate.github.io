@@ -301,7 +301,7 @@
     }
 
     newRoomRef.set(newRoom, function(error) {
-      if (error) {
+      if (!error) {
         self.enterRoom(newRoomRef.name());
       }
 
@@ -377,7 +377,7 @@
       self._userRef.child('rooms').child(roomId).remove();
     }
 
-    delete self._rooms[roomId];
+    //delete self._rooms[roomId];
 
     // Invoke event callbacks for the room-exit event.
     self._onLeaveRoom(roomId);
