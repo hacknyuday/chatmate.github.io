@@ -42,6 +42,8 @@
     4. Update the room id for auto-entry with a public room you have created
  -->
 <body>
+
+
 <div id="firechat-wrapper"></div>
 <script type='text/javascript'>
     var chatRef = new Firebase('https://firechat-demo.firebaseio.com');
@@ -50,18 +52,14 @@
         if (user) {
             chat.setUser(user.id, 'ANONYMOUS');
             setTimeout(function(){
-                alert("before");
-                //   chat._chat.createRoom('Jazz', 'public', '-Pop');
-                //  chat._chat.enterRoom('-Pop');
-                chat._chat.inviteUser(user.id, "-Pop");
-                alert(user.id);
-
-
+                  chat._chat.createRoom('Jazz', 'public', '-Pop');
             }, 250);
         } else {
             simpleLogin.login('anonymous');
         }
     });
 </script>
+    <center>
+        
 </body>
 </html>

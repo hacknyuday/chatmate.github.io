@@ -51,7 +51,7 @@
             chat.setUser(user.id, 'Anonymous' + user.id.substr(0, 8));
             setTimeout(function(){
                 chat._chat.createRoom('Rock', 'public', '-Rock');
-                chat._chat.enterRoom('-Rock');
+                
             }, 250);
         } else {
             simpleLogin.login('anonymous');
