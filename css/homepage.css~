@@ -12,7 +12,7 @@
 h1 {
 font-family: 'Montserrat', sans-serif;
 font-size:60px;
-    background-color:hsla(276, 92%, 29%, 0.25);
+    background-color:hsla(276, 92%, 29%, 0.1);
 }
 
 img.bg {
