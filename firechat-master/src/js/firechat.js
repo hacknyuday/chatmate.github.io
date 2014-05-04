@@ -53,7 +53,7 @@
     this._usersOnlineRef = this._firebase.child('user-names-online');
 
     // Setup and establish default options.
-    this._options = options || {};
+    //this._options = options || {};
 
     // The number of historical messages to load per room.
     this._options.numMaxMessages = this._options.numMaxMessages || 50;
@@ -283,7 +283,7 @@
   };
 
   // Create and automatically enter a new chat room.
-  Firechat.prototype.createRoom = function(roomName, roomType, callback) {
+  Firechat.prototype.createRoom = function(roomName, roomType) {
     var self = this,
         newRoomRef = this._roomRef.push();
 
@@ -301,11 +301,10 @@
     }
 
     newRoomRef.set(newRoom, function(error) {
-      if (!error) {
+      if (error) {
         self.enterRoom(newRoomRef.name());
       }
-      if (callback) {
-        callback(newRoomRef.name());
+
       }
     });
   };
